@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sign In-Hai la CTI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+		<a href="index.html" class="logo">Hai la Calculatoare</a>
+		<nav id="nav">
+		<a href="index.html">Acasa</a>
+		<a href="generic.html">Discipline</a>
+		<a href="elements.html">Planuri de invatamant</a>
+		<a href="profesori.html">Cadre didactice</a>
+		<a href="admin.html">Sign Up</a>
+		<a href="login.html">Sign In</a>
+		</nav>
+		</div>
+	</header>
+	<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+	<section id="main" class="wrapper">
+		<div class="inner">
+		<header class="align-center">
+	<div class="inner">
+	<h2>Login</h2>
+	<form name="login_form" action="login_transfer.php" method="post">
+		<table width="100%" cellpadding="1" cellspacing="2">
+		<tr>
+		<td width="40%">Username</td>
+		<td><input type="text" name="login_username" id="login_username" /></td>
+		</tr>
+		<tr>
+		<td>Parola</td>
+		<td><input type="password" name="login_parola" id="login_parola" /></td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td><input type="submit" name="login_btn" value="Login" /></td>
+		</tr>
+		</table>
+	</form>
+	</header>
+	</div>
+	</div>
+    </section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h2>Contacteaza Universitatea Petrol-Gaze din Ploiesti</h2>
+			<ul class="actions">
+				<li align="center"><span class="icon fa-phone"></span> <a href="#">0244 573 555</a></li>
+				<li align="center"><span class="icon fa-envelope"></span> <a href="#">rectorat@upg-ploiesti.ro</a></li>
+				<li align="center"><span class="icon fa-map-marker"></span>B-dul Bucuresti, nr. 39 , cod 100680, Ploiesti, Romania, PO BOX 52</li>
+			</ul>
+
+		<div class="copyright"> &copy; Copyright 2020 Universitatea Petrol-Gaze Din Ploiesti / Facultatea De Inginerie Mecanica si Electrica</div>
+			<div>
+			<p id="platform"></p>
+		</div>
+
+		<script type="text/javascript">
+		var plaform = document.getElementById('platform');
+
+		if(navigator.userAgent.match(/iPhone/i))
+		{
+			platform.textContent="Utilizati iOS.";
+		} 
+		   else if (navigator.userAgent.match(/iPad/i))
+		{
+			platform.textContent="Utilizati iPadOS.";
+		}
+		else if (screen.width<=699)
+		{
+			platform.textContent="Utilizati Android.";
+		} else if (navigator.userAgent.match(/Mac OS X/i))
+		{
+			platform.textContent="Utilizati MAC OS X.";
+		}
+		else
+		{
+			platform.textContent="Utilizati Windows.";
+		}
+		</script>
+		</footer>
+
+<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
